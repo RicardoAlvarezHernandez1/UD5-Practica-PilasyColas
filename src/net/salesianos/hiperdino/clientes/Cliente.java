@@ -17,4 +17,12 @@ public class Cliente {
         this.articulos = articulos;
     }
 
+
+    @Override
+    public String toString() {
+        String msg = ("* Nombre : " + nombre + "\n");
+        msg += ("* Total de productos : " + numeroDeProductos + "\n");
+        msg +=("* Lista de artículos en la cesta : " + "\n" + articulos);
+        return msg;
+    }
 }
