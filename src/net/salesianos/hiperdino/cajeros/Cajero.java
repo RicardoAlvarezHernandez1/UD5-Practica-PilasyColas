@@ -16,4 +16,17 @@ public class Cajero {
         this.persons = persons;
     }
 
+    @Override
+    public String toString() {
+        String msg = ("* Número de caja : " + numeroDeCaja + "\n");
+        msg += ("* Total de clientes : " + numeroDeClientes + "\n");
+        msg +=("* Clientes en la fila : " + "\n" + persons);
+        return msg;
+    }
+
 }
+
+
+
+
+
