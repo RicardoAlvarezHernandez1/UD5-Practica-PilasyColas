@@ -4,16 +4,17 @@ import java.util.Stack;
 
 
 public class Cliente {
-    private String nombre;
-    private int numeroDeProductos;
     
+    private String nombre;
+
+    private int numeroDeProductos;
 
     Stack<String> articulos = new Stack<>();
-
-
-    public void annadirArticulo(String articulo){
-        articulos.push(articulo);
+    
+    public Cliente(String nombre, int numeroDeProductos, Stack<String> articulos) {
+        this.nombre = nombre;
+        this.numeroDeProductos = numeroDeProductos;
+        this.articulos = articulos;
     }
-
 
 }
