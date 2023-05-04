@@ -86,6 +86,7 @@ public class App {
                     }
                     break;
                 default:
+                    System.out.println("Debe introducir un número de los que indica el menú.");
                     break;
             }
         }
