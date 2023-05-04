@@ -20,9 +20,13 @@ public class Cliente {
 
     @Override
     public String toString() {
-        String msg = ("* Nombre : " + nombre + "\n");
+        String msg = ("********************************" + "\n" + "* Nombre : " + nombre + "\n");
         msg += ("* Total de productos : " + numeroDeProductos + "\n");
-        msg +=("* Lista de artículos en la cesta : " + "\n" + articulos);
+        String listaArticulos = "";
+        for (int i = 0; i < articulos.size(); i++) {
+            listaArticulos += articulos.get(i);
+        }
+        msg +=("* Lista de artículos en la cesta : " + "\n" + listaArticulos + "********************************");
         return msg;
     }
 }
